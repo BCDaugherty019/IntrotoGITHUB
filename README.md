@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-</head>
 <body>
     <h1>Welcome to My GitHub Homepage</h1>
     <p>Click the link below:</p>
