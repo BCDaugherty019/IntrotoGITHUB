@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <body>
     <h1>Welcome to My GitHub Homepage</h1>
