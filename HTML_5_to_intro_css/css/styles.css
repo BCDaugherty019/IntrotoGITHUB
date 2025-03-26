@@ -1,0 +1,36 @@
+body {background-color: rgb(122, 122, 234);}
+
+
+#container {
+    background-color: rgb(18, 187, 187);
+    width: 1200px;
+    margin: 20px auto;
+    border: 2px solid whitesmoke ;
+    padding: 20px
+}
+
+
+nav{
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+body{
+   text-decoration-color: azure; 
+}
+
+
+nav a{
+    font-size: larger ;
+    color: blanchedalmond;
+}
+
+
+nav a:hover{
+    text-decoration: none;
+}
