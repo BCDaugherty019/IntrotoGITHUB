@@ -1,32 +1,72 @@
-body {background-color: rgb(122, 122, 234);}
+/* Universal box-sizing for consistent layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+/* Background color for the entire page */
+body {
+    background-color: rgb(122, 122, 234);
+    font-family: Arial, sans-serif;
+}
 
+/* Container to wrap all content */
 #container {
     background-color: rgb(18, 187, 187);
-    width: 1200px;
+    max-width: 1200px;
+    width: 90%;
     margin: 20px auto;
-    border: 2px solid whitesmoke ;
-    padding: 20px
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-
-nav{
+/* Navigation styles */
+nav {
     text-align: center;
     margin: 20px 0;
 }
 
-h1{
-    text-align: center;
-    margin: 20px 0;
-}
-
-
-nav a{
-    font-size: larger ;
+/* Navigation links */
+nav a {
+    font-size: larger;
     color: blanchedalmond;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-
-nav a:hover{
+/* Hover effect for navigation links */
+nav a:hover {
     text-decoration: none;
+    color: black;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+/* Center headings */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Center images */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
 }
