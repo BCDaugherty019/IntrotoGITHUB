@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(122, 122, 234);
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    background-color: rgb(18, 187, 187);
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    background-color: aquamarine;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+display: block;
+color: white;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+margin: 0 20px;
+width: 125px;
+height: 45px;
+line-height: 40px;
+}
+
+nav a:hover {
+    background-color: rgb(179, 245, 195);
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+}
+
+
+resume part 4
