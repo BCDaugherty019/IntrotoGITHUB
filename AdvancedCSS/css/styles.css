@@ -11,7 +11,7 @@ body {
 
 #container {
     background-color: rgb(18, 187, 187);
-    max-width: 1200px;
+    max-width: 65%;
     width: 90%;
     margin: 20px auto;
     border: 2px solid whitesmoke;
@@ -66,6 +66,27 @@ nav a:hover {
     color: black;
 }
 
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #2a1b9e;
+    padding: 20px 50px; 
+}
+
+
+
+
+
+
 footer {
     text-align: center;
     margin-top: 20px;
@@ -76,4 +97,10 @@ footer {
 }
 
 
-resume part 4
+#banner {
+    width: 100%;
+}
+
+.heading_style {
+    text-shadow: 2px 2px 2px rgb(151, 184, 188);
+}
