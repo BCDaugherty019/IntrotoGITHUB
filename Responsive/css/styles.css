@@ -1,106 +1,71 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Global Styles */
+
+body{
+    background-color:#3C038C;
 }
 
-body {
-    background-color: rgb(122, 122, 234);
-    font-family: Arial, sans-serif;
-}
-
-#container {
-    background-color: rgb(18, 187, 187);
-    max-width: 65%;
-    width: 90%;
-    margin: 20px auto;
-    border: 2px solid whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-
-h1 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-img {
+img{
     display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
-nav {
-    text-align: center;
-    margin: 20px 0;
-    background-color: aquamarine;
-    padding: 5px;
+#container{
+    background-color: aqua;
 }
 
-nav ul {
+@media (min-width: 320px){
+    nav{
+        background-color: aquamarine;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+nav ul{
     list-style-type: none;
-    padding: 0;
+    padding: 1;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
 }
 
 nav li a {
-display: block;
-color: white;
-font-size: 20px;
-font-weight: bold;
-text-decoration: none;
-margin: 0 20px;
-width: 125px;
-height: 45px;
-line-height: 40px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(33, 177, 31);
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 5px;
 }
 
-nav a:hover {
-    background-color: rgb(179, 245, 195);
-    color: black;
-}
-
-main {
-    display: flex;
-    gap: 20px;
+main{
     padding: 20px;
 }
 
-section {
-    flex: 3;
-}
-
-aside {
-    flex: 1;
-    background-color: #2a1b9e;
-    padding: 20px 50px; 
-}
-
-
-
-
-
-
-footer {
+h1,h2,h3 {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    color: rgb(241, 242, 245);
+    text-shadow: 1px 1px 1px #000;
 }
 
 
-#banner {
-    width: 100%;
-}
 
-.heading_style {
-    text-shadow: 2px 2px 2px rgb(151, 184, 188);
+@media (min-width: 768px){
+    nav  li{
+        display: inline-block;
+    }
+    nav li a{
+        width: 125px;
+
+    }
 }
