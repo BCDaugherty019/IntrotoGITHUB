@@ -17,7 +17,7 @@
 <a href="https://bcdaugherty019.github.io/IntrotoGITHUB/Intro_to_html/home.html" target="_blank">Intro HTML</a>
 
 
-<a href="https://bcdaugherty019.github.io/IntrotoGITHUB/Final/index.html" target="_blank">Intro HTML</a>
+<a href="https://bcdaugherty019.github.io/IntrotoGITHUB/Final/index.html" target="_blank">Final</a>
 
 
     
