@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Courier New', 'Futura PT', sans-serif;
     background-color: #1e102a;
     color: #e6dfff;
     background-image: linear-gradient(145deg, #2b1b3c, #1e102a);
@@ -124,4 +124,11 @@
       padding: 20px;
     }
   }
+  
+
+  .img{ text-align: center;
+  }
+
+
+ 
   
