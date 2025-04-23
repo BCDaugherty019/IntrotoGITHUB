@@ -1,219 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Band Gallery</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <style>
-        /* Reset and Base Styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Band Gallery</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: 'Courier New', 'Futura PT', sans-serif;
-            background-color: #1e102a;
-            color: #e6dfff;
-            background-image: linear-gradient(145deg, #2b1b3c, #1e102a);
-            background-attachment: fixed;
-            line-height: 1.6;
-        }
+    body {
+      font-family: 'Courier New', 'Futura PT', sans-serif;
+      background-color: #1e102a;
+      color: #e6dfff;
+      background-image: linear-gradient(145deg, #2b1b3c, #1e102a);
+      background-attachment: fixed;
+      line-height: 1.6;
+    }
 
-        /* Container */
-        #container {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 40px auto;
-            border: 2px solid #5c3c88;
-            border-radius: 12px;
-            overflow: hidden;
-            background-color: rgba(30, 16, 42, 0.95);
-            box-shadow: 0 0 30px rgba(152, 102, 255, 0.3);
-        }
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 40px auto;
+      border: 2px solid #5c3c88;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: rgba(30, 16, 42, 0.95);
+      box-shadow: 0 0 30px rgba(152, 102, 255, 0.3);
+    }
 
-        /* Navigation */
-        nav {
-            flex: 1 1 250px;
-            background: linear-gradient(180deg, #3c236e, #2a174d);
-            padding: 30px 20px;
-            border-right: 2px solid #5c3c88;
-        }
+    nav {
+      flex: 1 1 250px;
+      background: linear-gradient(180deg, #3c236e, #2a174d);
+      padding: 30px 20px;
+      border-right: 2px solid #5c3c88;
+    }
 
-        nav ul {
-            list-style: none;
-        }
+    nav ul {
+      list-style: none;
+    }
 
-        nav li {
-            margin-bottom: 20px;
-        }
+    nav li {
+      margin-bottom: 20px;
+    }
 
-        nav a {
-            color: #e0d0ff;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            padding: 12px 16px;
-            background-color: #5c3c88;
-            border-radius: 8px;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-        }
+    nav a {
+      color: #e0d0ff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      padding: 12px 16px;
+      background-color: #5c3c88;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
 
-        nav a:hover {
-            background-color: #a678ff;
-            color: #1e102a;
-        }
+    nav a:hover {
+      background-color: #a678ff;
+      color: #1e102a;
+    }
 
-        /* Main Content */
-        main {
-            flex: 3 1 700px;
-            padding: 40px;
-        }
+    main {
+      flex: 3 1 700px;
+      padding: 40px;
+    }
 
-        main h1 {
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-            color: #dab6ff;
-            text-shadow: 2px 2px 5px #5c3c88;
-        }
+    main h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #dab6ff;
+      text-shadow: 2px 2px 5px #5c3c88;
+    }
 
-        main h2 {
-            margin-top: 30px;
-            margin-bottom: 10px;
-            color: #cfaeff;
-        }
+    main h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #cfaeff;
+    }
 
-        main p,
-        main li {
-            color: #e6dfff;
-            margin-bottom: 16px;
-        }
+    main p,
+    main li {
+      color: #e6dfff;
+      margin-bottom: 16px;
+    }
 
-        main ul {
-            padding-left: 20px;
-        }
+    main ul {
+      padding-left: 20px;
+    }
 
-        img {
-            max-width: 100%;
-            border-radius: 12px;
-            margin: 20px 0;
-            box-shadow: 0 0 20px rgba(152, 102, 255, 0.3);
-        }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 0 20px rgba(152, 102, 255, 0.3);
+    }
 
-        /* Footer */
-        footer {
-            width: 100%;
-            background: #2e1c4f;
-            color: #d9caff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            border-top: 2px solid #5c3c88;
-            letter-spacing: 1px;
-        }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            #container {
-                flex-direction: column;
-            }
+    .gallery-item {
+      width: 48%;
+      margin-bottom: 20px;
+    }
 
-            nav {
-                border-right: none;
-                border-bottom: 2px solid #5c3c88;
-            }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
 
-            main {
-                padding: 20px;
-            }
-        }
+    video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(152, 102, 255, 0.3);
+    }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    footer {
+      width: 100%;
+      background: #2e1c4f;
+      color: #d9caff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 2px solid #5c3c88;
+      letter-spacing: 1px;
+    }
 
-        .gallery-item {
-            width: 48%;
-            margin-bottom: 20px;
-        }
+    @media (max-width: 768px) {
+      #container {
+        flex-direction: column;
+      }
 
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-        }
+      nav {
+        border-right: none;
+        border-bottom: 2px solid #5c3c88;
+      }
 
-        .img {
-            text-align: center;
-        }
-    </style>
+      main {
+        padding: 20px;
+      }
+
+      .gallery-item {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div id="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About/Show Dates</a></li>
+        <li><a href="equipment.html">Gear</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="bandgallery.html">Gallery</a></li>
+      </ul>
+    </nav>
 
-    <div id="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About/Show Dates</a></li>
-                <li><a href="equipment.html">Gear</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="bandgallery.html">Gallery</a></li>
-            </ul>
-        </nav>
+    <main>
+      <h1>Band Gallery</h1>
+      <div class="gallery">
+        <div class="gallery-item"><img src="images/band1.JPG" alt="Image 1"></div>
+        <div class="gallery-item"><img src="images/band2.jpg" alt="Image 2"></div>
+        <div class="gallery-item"><img src="images/studio.jpg" alt="Image 3"></div>
+        <div class="gallery-item"><img src="images/hall1.jpg" alt="Image 4"></div>
+        <div class="gallery-item"><img src="images/jazzbass.jpg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="images/band3.jpg" alt="Image 6"></div>
+        <div class="gallery-item"><img src="images/band4.jpg" alt="Image 7"></div>
+        <div class="gallery-item"><img src="images/band5.jpg" alt="Image 8"></div>
+        <div class="gallery-item"><img src="images/band6.jpg" alt="Image 9"></div>
+      </div>
 
-        <main>
-            <h1>Band Gallery</h1>
-            <div class="gallery">
-                <!-- Add your images here -->
-                <div class="gallery-item">
-                    <img src="images/band1.JPG" alt="Image 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/band2.jpg" alt="Image 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/studio.jpg" alt="Image 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/hall1.jpg" alt="Image 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/jazzbass.jpg" alt="Image 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/band3.jpg" alt="Image 6">
-                </div>
+      <video controls>
+        <source src="videos/Sloppy Live Clip - 1745349696199.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </main>
+  </div>
 
-                <div class="gallery-item">
-                    <img src="images/band4.jpg" alt="Image 7">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="images/band5.jpg" alt="Image 8">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="images/band6.jpg" alt="Image 9">
-                </div>
-            </div class="gallery-item">
-            <video width="600" controls>
-                <source src="videos/Sloppy Live Clip - 1745349696199.mp4" type="video/mp4">
-             </video>
-
-            </div>
-        </main>
-    </div>
-
-    <footer>
-        &copy; 2025 SloppyStreetTacosBand
-    </footer>
-
+  <footer>
+    &copy; 2025 SloppyStreetTacosBand
+  </footer>
 </body>
 </html>
